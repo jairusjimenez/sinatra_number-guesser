@@ -1,20 +1,22 @@
 <html>
-	<head></head>
+	<head>
+		<title>Web Guesser made in: Sinatra</title>
+	</head>
 	<body>
+		<center>	
+			<p>
+				Status: <span style = "color: <%= color %>;"><%= msg %></span>
+			</p>
 
-		<p>
-			Status: <span style = "color: <%= color %>;"><%= msg %></span>
-		</p>
+			<p>
+				The SECRET NUMBER is <%= color == "green" ? number : "" %>
+			</p>
 
-		<p>
-			The SECRET NUMBER is <%= number %>
-		</p>
-
-		<form>
-		  <input type='text' name='guess' />
-		  <input type='submit' value='Guess!' />
-		</form>
-
+			<form>
+			  <input type='text' name='guess' />
+			  <input type='submit' value='Guess!' />
+			</form>
+		</center>
 	</body>
 </html>
 
